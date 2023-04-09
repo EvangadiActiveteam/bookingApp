@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+//database connection with mongoose ODM
 const dbConnection = async () => {
   return mongoose
     .connect(process.env.MONGO_URI, {
