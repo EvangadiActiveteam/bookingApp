@@ -1,0 +1,36 @@
+# ignoring large files like node_modules and env's (for security)
+server/node_modules
+server/.env
+Client/node_modules
+Client/*.local
+
+# ignoring Logs from the Client folder
+Client/logs
+Client/*.log
+Client/npm-debug.log*
+Client/yarn-debug.log*
+Client/yarn-error.log*
+Client/pnpm-debug.log*
+Client/lerna-debug.log*
+Client/dist
+Client/dist-ssr
+
+# ignoring Logs from the server folder
+server/logs
+server/*.log
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/pnpm-debug.log*
+server/lerna-debug.log*
+
+# ignoring Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
