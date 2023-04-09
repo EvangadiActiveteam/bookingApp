@@ -2,9 +2,9 @@
   "name": "jobs",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "app.mjs",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.mjs"
   },
   "keywords": [],
   "author": "",
