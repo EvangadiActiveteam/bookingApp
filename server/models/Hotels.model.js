@@ -16,11 +16,11 @@ const HotelsSchema = new Schema({
   },
   rooms: {
     type: [SchemaTypes.ObjectId],
-    ref: "Rooms",
+    ref: "Room",
   },
   images: {
     type: Array,
   },
 });
 
-export const Hotel = model("Hotels", HotelsSchema);
+export const Hotel = model("Hotel", HotelsSchema);

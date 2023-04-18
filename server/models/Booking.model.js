@@ -3,7 +3,7 @@ import { Schema, model, SchemaTypes } from "mongoose";
 const BookingSchema = new Schema({
   user: {
     type: SchemaTypes.ObjectId,
-    ref: "Users",
+    ref: "User",
   },
   isCouple: {
     type: Boolean,
@@ -11,8 +11,8 @@ const BookingSchema = new Schema({
   },
   rooms: {
     type: [SchemaTypes.ObjectId],
-    ref: "Rooms",
+    ref: "Room",
   },
 });
 
-export const Bookings = model("Bookings", BookingSchema);
+export const Bookings = model("Booking", BookingSchema);

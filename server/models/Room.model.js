@@ -20,8 +20,8 @@ const RoomSchema = new Schema({
   },
   hotel: {
     type: SchemaTypes.ObjectId,
-    ref: "Hotels",
+    ref: "Hotel",
   },
 });
 
-export const Room = model("Rooms", RoomSchema);
+export const Room = model("Room", RoomSchema);
